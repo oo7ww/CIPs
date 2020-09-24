@@ -103,7 +103,7 @@ contract SponsorWhitelistControl {
     // ------------------------------------------------------------------------
     // Someone will sponsor the storage collateral for contract `contract_addr`.
     // ------------------------------------------------------------------------
-    function setSponsorForCollateral(address contract_addr) public payable {}
+    function setSponsorforCollateral(address contract_addr) public payable {}
 
     // ------------------------------------------------------------------------
     // Add commission privilege for address `user` to some contract.
