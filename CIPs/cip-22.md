@@ -38,61 +38,61 @@ contract SponsorWhitelistControl {
     /*** Query Functions ***/
     /**
      * @dev get gas sponsor address of specific contract
-     * @param contract The address of the sponsored contract
+     * @param contract_addr The address of the sponsored contract
      */
-    function getSponsorforGas(address contract) public returns (address) {}
+    function getSponsorforGas(address contract_addr) public returns (address) {}
   	
     /**
      * @dev get current Sponsored Balance for gas
-     * @param contract The address of the sponsored contract
+     * @param contract_addr The address of the sponsored contract
      */
-    function getSponsoredBalanceforGas(address contract) public returns (uint) {}
+    function getSponsoredBalanceforGas(address contract_addr) public returns (uint) {}
   	
     /**
      * @dev get current Sponsored Gas fee upper bound
-     * @param contract The address of the sponsored contract
+     * @param contract_addr The address of the sponsored contract
      */
-    function getSponsoredGasFeeUpperbound(address contract) public returns (uint) {}
+    function getSponsoredGasFeeUpperbound(address contract_addr) public returns (uint) {}
 		 
     /**
      * @dev get collateral sponsor address
-     * @param contract The address of the sponsored contract
+     * @param contract_addr The address of the sponsored contract
      */
-    function getSponsorforCollateral(address contract) public returns (address) {}
+    function getSponsorforCollateral(address contract_addr) public returns (address) {}
 		
     /**
      * @dev get current Sponsored Balance for collateral
-     * @param contract The address of the sponsored contract
+     * @param contract_addr The address of the sponsored contract
      */
-    function getSponsoredBalanceforCollateral(address contract) public returns (uint) {}
+    function getSponsoredBalanceforCollateral(address contract_addr) public returns (uint) {}
     
     /**
      * @dev check if a user is in a contract's whitelist
-     * @param contract The address of the sponsored contract
+     * @param contract_addr The address of the sponsored contract
      * @param user The address of contract user
      */
-    function isWhitelisted(address contract, address user) public returns (bool) {}
+    function isWhitelisted(address contract_addr, address user) public returns (bool) {}
 		
     /**
      * @dev check if all users are in a contract's whitelist 
-     * @param contract The address of the sponsored contract
+     * @param contract_addr The address of the sponsored contract
      */
-    function isAllWhitelisted(address contract) public returns (bool) {}
+    function isAllWhitelisted(address contract_addr) public returns (bool) {}
 
     /*** for contract admin only **/
     /**
      * @dev contract admin add user to whitelist 
-     * @param contract The address of the sponsored contract
+     * @param contract_addr The address of the sponsored contract
      * @param address[] The user address array
      */
-    function addPrivilegebyAdmin(address contract, address[] memory) public {}
+    function addPrivilegebyAdmin(address contract_addr, address[] memory) public {}
 		
     /**
      * @dev contract admin remove user from whitelist 
-     * @param contract The address of the sponsored contract
+     * @param contract_addr The address of the sponsored contract
      * @param address[] The user address array
      */
-    function removePrivilegeByAdmin(address contract, address[] memory) public {}
+    function removePrivilegeByAdmin(address contract_addr, address[] memory) public {}
 
     // ------------------------------------------------------------------------
     // Someone will sponsor the gas cost for contract `contract_addr` with an
